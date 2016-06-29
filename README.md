@@ -6,6 +6,6 @@ The above simple application is done using Silex, Uploadcare, and the awesome Tw
 
 You can upload images into uploadcare, save them into your local Database, crop the, get the images from any cloud stogare etc.
 
-![](https://github.com/abel-masila/side-nav/blob/master/img/2.PNG "Drag to hide menu")
-![](https://github.com/abel-masila/side-nav/blob/master/img/4.PNG "Drag to hide menu")
-![](https://github.com/abel-masila/side-nav/blob/master/img/5.PNG "Drag to hide menu")
+![](https://github.com/abel-masila/PHP-Image-Upload-Using-Silex-MicroFramework/blob/master/img/2.PNG "Drag to hide menu")
+![](https://github.com/abel-masila/PHP-Image-Upload-Using-Silex-MicroFramework/blob/master/img/3.PNG "Drag to hide menu")
+![](https://github.com/abel-masila/PHP-Image-Upload-Using-Silex-MicroFramework/blob/master/img/4.PNG "Drag to hide menu")
