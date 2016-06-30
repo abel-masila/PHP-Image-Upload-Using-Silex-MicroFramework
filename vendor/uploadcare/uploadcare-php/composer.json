@@ -1,0 +1,35 @@
+{
+    "name": "uploadcare/uploadcare-php",
+    "description": "Uploadcare API binding for PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uploadcare, LLC",
+            "email": "hello@uploadcare.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "Uploadcare": "src"
+        }
+    },
+    "keywords": [
+        "files",
+        "upload",
+        "cdn",
+        "uploadcare",
+        "image management",
+        "cloud"
+    ],
+    "homepage": "https://uploadcare.com",
+    "support": {
+        "email": "support@uploadcare.com",
+        "issues": "https://github.com/uploadcare/uploadcare-php/issues"
+    }
+}

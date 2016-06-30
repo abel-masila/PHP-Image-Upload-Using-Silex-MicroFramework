@@ -1,0 +1,28 @@
+{% extends 'templates/app.twig' %}
+
+{% block main %}
+    <form action="{{ url('image.upload') }}" class="upload-form" method="post">
+        {{ app.uploadcare.widget.getInputTag('file_id') | raw }}
+        <button type="input" class="upload-form__button button">Submit</button>
+    </form>
+
+    <div class="thumbnails">
+    {% for image in images %}
+        <div class="thumbnails__thumb">
+            <a href="{{ url ('image.show', {hash: image.hash}) }}">
+                <img src="{{ app.uploadcare.getFile(image.url).scaleCrop(500,300).op('quality/lightest').op('progressive/yes').getUrl }}" class="thumbnails__thumb-image"
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock%}
+
+{% block scripts %}
+<script>
+    var widget=uploadcare.SingleWidget('[role=uploadcare-uploader]');
+
+    widget.onUploadComplete(function(){
+       document.querySelector('.upload-form__button').style='display:inline-block';
+    });
+</script>   
+{% endblock %}

@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AI-Awesome Image</title>
+  <meta name="Abel Masila" content="Awesome Image">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="{{ app.request.baseUrl}}/css/app.css">
+
+  <script>
+    UPLOADCARE_LIVE=false;
+    UPLOADCARE_IMAGES_ONLY=true;
+    UPLOADCARE_CROP='free';
+  </script>
+
+
+  {{ app.uploadcare.widget.getScriptTag | raw }}
+</head>
+<body>
+  <div class="container">
+    {% block main %} {% endblock %}
+
+    {% block scripts %} {% endblock %}
+  </div>
+  
+</body>
+</html>

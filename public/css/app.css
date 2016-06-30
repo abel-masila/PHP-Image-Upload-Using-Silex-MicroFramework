@@ -1,0 +1,67 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.upload-form{
+    text-align: center;
+}
+.upload-form__button{
+    display: none;
+}
+.container{
+    width: 100%;
+}
+.uploadcare-widget{
+    width: 100%;
+    margin: 40px 0 20px 0;
+}
+.uploadcare-widget-button{
+    padding: 20px 40px;
+    font-weight: 600;
+}
+.uploadcare-widget-dragndrop-area{
+    padding: 1em;
+    margin-top: -2.3em;
+    border-radius: 0;
+}
+.button{
+    padding: 20px 40px;
+    border: 0;
+    font-size: inherit;
+    font-weight: 600;
+    background-color: #CCC;
+    color: #777;
+    cursor: pointer;
+}
+.thumbnails{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.thumbnails__thumb,
+.thumbnail {
+    width: 300px;
+    margin: 40px 40px 0 40px;
+    background: #fff;
+    padding: 10px;
+   -moz-box-shadow: 1px 1px 40px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 1px 1px 40px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 40px rgba(0,0,0,0.1);
+}
+.thumbnails__thumb-image{
+    width: 100%;
+}
+.thumbnails__thumb{
+    -webkit-transition: transform 80ms ease-in; 
+    -moz-transition: transform 80ms ease-in;
+    transition: transform 80ms ease-in;
+}
+.thumbnails__thumb:hover{
+    transform: scale(1.1);
+}
+.thumbnail {
+    width: auto;
+    height: auto;
+}
+.thumbnail__image{
+    max-width: 40%;
+}

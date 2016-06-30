@@ -1,0 +1,7 @@
+{% extends 'templates/app.twig' %}
+
+{% block main %}
+    <div class="thumbnail">
+        <img src="{{ app.uploadcare.getFile(image.url).getUrl }}" class="thumbnail__image"/>
+    </div>
+{% endblock%}
